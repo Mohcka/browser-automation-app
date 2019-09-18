@@ -1,0 +1,67 @@
+{
+  "name": "selenium-desktop-app",
+  "productName": "selenium-desktop-app",
+  "version": "1.0.0",
+  "description": "An application that can run automation tasks using selenium webdriver.  Can be built into an executable file and run on any desktop.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Mohcka",
+    "email": "mikeduels@yahoo.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "selenium_desktop_app"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "geckodriver": "^1.16.2",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "materialize-css": "^1.0.0-rc.2",
+    "prettier": "^1.18.2",
+    "selenium-webdriver": "^4.0.0-alpha.5",
+    "sweetalert2": "^8.17.4"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.45",
+    "@electron-forge/maker-deb": "6.0.0-beta.45",
+    "@electron-forge/maker-rpm": "6.0.0-beta.45",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.45",
+    "@electron-forge/maker-zip": "6.0.0-beta.45",
+    "electron": "6.0.7"
+  }
+}
