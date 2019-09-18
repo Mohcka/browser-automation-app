@@ -1,6 +1,6 @@
 {
-  "name": "selenium-desktop-app",
-  "productName": "selenium-desktop-app",
+  "name": "browser-desktop-app",
+  "productName": "browser-desktop-app",
   "version": "1.0.0",
   "description": "An application that can run automation tasks using selenium webdriver.  Can be built into an executable file and run on any desktop.",
   "main": "src/index.js",
