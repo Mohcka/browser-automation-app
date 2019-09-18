@@ -8,4 +8,4 @@ My current job requires a lot of data entry.  So I made this to help speed thing
 
 If you haven't already, please install [nodejs](https://nodejs.org/en/) and [firefox](https://www.mozilla.org/en-US/firefox/new/).
 
-Once everything's been installed correctly, clone this git repository by entering `git clone https://github.com/Mohcka/browser-automation-app.git` in your terminal.  Then run `npm i` then `npm start` and the app should open and you're free to interact the app as you please.
+Once everything's been installed correctly, clone this git repository by entering `git clone https://github.com/Mohcka/browser-automation-app.git` in your terminal.  Then run `npm i` then `npm start` and the app should open and you're free to interact the app as you please.   If you want to package and redistribute this app, run `npm run make` and the platform specific distributables will be generated in the `/out` directory.
