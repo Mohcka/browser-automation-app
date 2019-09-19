@@ -11,10 +11,29 @@
   </head>
   <body>
     <div class="container">
-      <button class="start-btn">
-        <i class="material-icons left" style="font-size: 2em">drive_eta</i>
-        Start Automation
-      </button>
+      <div class="automation-station">
+        <div class="form">
+          <div class="search_queries">
+            <label for="search_queries">Enter some google searches</label>
+            <textarea
+              name="search_queries"
+              id="search_queries"
+              cols="50"
+              rows="6"
+              style="resize: none;"
+              placeholder="Why isn't my code working?&#10;What year is it?&#10;Cute puppies"
+            ></textarea>
+          </div>
+          <div class="instances">
+            <label for="instances">No. of Browsers (Max: 5)</label>
+            <input type="text" name="instances" id="instances" value="1" />
+          </div>
+        </div>
+        <button>
+          <i class="material-icons left" style="font-size: 2em">drive_eta</i>
+          Start Automation
+        </button>
+      </div>
     </div>
 
     <script src="./renderer.js"></script>
